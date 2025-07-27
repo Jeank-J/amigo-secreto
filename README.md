@@ -35,8 +35,6 @@ Es una herramienta ideal para usar en fiestas, actividades familiares, o encuent
 
 ## 📁 Estructura del proyecto
 
-## 📁 Estructura del proyecto
-
 ```plaintext
 amigo-secreto/
 ├── index.html   ── Página principal del juego
