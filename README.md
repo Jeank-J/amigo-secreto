@@ -35,3 +35,11 @@ Es una herramienta ideal para usar en fiestas, actividades familiares, o encuent
 
 ## 📁 Estructura del proyecto
 
+amigo-secreto/
+├── index.html # Página principal del juego
+├── style.css # Estilos del juego
+├── script.js # Lógica de agregar y sortear amigos
+└── README.md # Documentación del proyecto
+
+---
+
