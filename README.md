@@ -39,7 +39,7 @@ Es una herramienta ideal para usar en fiestas, actividades familiares, o encuent
 amigo-secreto/
 ├── index.html   ── Página principal del juego
 ├── style.css    ── Estilos del juego
-├── script.js    ── Lógica de agregar y sortear amigos
+├── app.js    ── Lógica de agregar y sortear amigos
 └── README.md    ── Documentación del proyecto
 ---
 
