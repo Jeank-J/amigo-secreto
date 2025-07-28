@@ -1,28 +1,39 @@
-let names = [];
+let amigos = [];
+let listaAmigos = document.getElementById('listaAmigos');
 
-let entrada = document.getElementById('amigo');
-
-function limpiarEntrada (){
-    entrada = "";
+function sortearAmigo(){        
+    let n = amigos.length;
+    if (n == 0){
+        alert('No hay amigos listados')
+        return;
+    }
+    let numeroAleatorio = Math.floor(Math.random() * n);    
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = amigos[numeroAleatorio];
     return;
-}
-function actualizar() {
-    names.length = 0;
-    limpiarEntrada();
-}
-
-function sortearAmigo(){
-    let n = names.length;
-    let numeroAleatorio = Math.floor(Math.random()*n) + 1;
-    return names[numeroAleatorio];
 }
 
 function agregarAmigo(){
-    if (entrada != ""){
-        names.push(entrada.value);
-        limpiarEntrada();
+    let entrada = document.getElementById('amigo');
+    let nombre = entrada.value;
+    nombre = nombre.trim();
+    if (nombre !== ""){
+        amigos.push(nombre);
+        entrada.value = '';
+        actualizarListaAmigos();
+    }else{
+        alert("Por favor, inserte un nombre.");
     }
     return;
 }
 
-console.log("hola");
+function actualizarListaAmigos(){
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = "";
+    let n = amigos.length;
+    for (let i = 0; i < n; i++){
+        const li = document.createElement('li');
+        li.textContent = amigos[i];
+        listaAmigos.appendChild(li);
+    }
+}
