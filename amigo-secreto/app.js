@@ -1,5 +1,4 @@
 let amigos = [];
-let listaAmigos = document.getElementById('listaAmigos');
 
 function sortearAmigo(){        
     let n = amigos.length;
